@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PostsController!{% endblock %}
+
+{% block body %}
+{% for post in posts %}
+    <a href = "{{ path('blog_show', {slug:post.slug}) }}"> {{post.title}}</a> <br /><br />
+    {% endfor %}
+    <a href="{{ path('addpost') }}" style="color: red; font-weight: bold; font-size: 200%;text-decoration: none;  display:block;border-bottom: 1px solid; width:25%; background: #5eb5e0 no-repeat 1px; text-align: center; padding: 0px 10px;"> Создать пост</a>
+{% endblock %}

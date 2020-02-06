@@ -6,13 +6,16 @@
       <sourceFolder url="file://$MODULE_DIR$/test_project/tests" isTestSource="true" packagePrefix="App\Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/test_project/src" isTestSource="false" packagePrefix="App\" />
+      <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/cocur/slugify" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/doctrine/annotations" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/doctrine/cache" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/doctrine/collections" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/doctrine/common" />
+      <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/doctrine/data-fixtures" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/doctrine/dbal" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/doctrine/doctrine-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/doctrine/doctrine-fixtures-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/doctrine/doctrine-migrations-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/doctrine/event-manager" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/doctrine/inflector" />
@@ -24,6 +27,7 @@
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/doctrine/reflection" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/easycorp/easy-log-handler" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/fzaninotto/faker" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/jdorn/sql-formatter" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/nikic/php-parser" />

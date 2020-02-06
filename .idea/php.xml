@@ -109,6 +109,10 @@
       <path value="$PROJECT_DIR$/test_project/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/test_project/vendor/jdorn/sql-formatter" />
       <path value="$PROJECT_DIR$/test_project/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/test_project/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/test_project/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/test_project/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/test_project/vendor/cocur/slugify" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
