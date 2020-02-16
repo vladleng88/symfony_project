@@ -13,10 +13,13 @@ use App\Entity\Post;
 class PostsController extends AbstractController
 {
     private $repository;
+    private $slugify;
 
-    public function __construct(PostRepository $postRepository)
+
+    public function __construct(PostRepository $postRepository, Slugify $slugify)
     {
         $this->repository = $postRepository;
+        $this->slugify = $slugify;
     }
 
     /**
@@ -31,17 +34,27 @@ class PostsController extends AbstractController
             'posts' => $posts,
         ]);
     }
+    /**
+     * @Route("/search", name="blog_search")
+     */
+    public function search (Request $request) {
+        $query = $request->query->get('q');
+        $posts = $this->repository->searchByQuery($query);
+        return $this->render('posts/query.html.twig', [
+            'posts' => $posts
+        ]);
+    }
 
     /**
      * @Route("/posts/{slug}/update", name="post_update")
      */
     public function edit(Request $request, Post $post)
     {
-        $slugify = Slugify::create();
+        //$slugify = Slugify::create();
         $form = $this->createForm(PostType::class, $post);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
-            $post->setSlug($slugify->slugify($post->getTitle()));
+            $post->setSlug($this->slugify->slugify($post->getTitle()));
             $this->getDoctrine()->getManager()->flush();
             return $this->redirectToRoute('blog_show',[
                 'slug'=>$post->getSlug()
@@ -69,11 +82,11 @@ class PostsController extends AbstractController
     public function addPost(Request $request)
     {
         $post = new Post();
-        $slugify = Slugify::create();
+        //$slugify = Slugify::create();
         $form = $this->createForm(PostType::class, $post);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
-            $post->setSlug($slugify->slugify($post->getTitle()));
+            $post->setSlug($this->slugify->slugify($post->getTitle()));
             $post->setCreatedAt(new \DateTime());
             $em = $this->getDoctrine()->getManager();
             $em->persist($post);

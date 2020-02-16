@@ -1,0 +1,18 @@
+body {
+    background-color: green;
+}
+a {
+    color: red;
+}
+.addpostbutton a{
+    color: red;
+    font-weight: bold;
+    font-size: 200%;
+    text-decoration: none;
+    display:block;
+    border-bottom: 1px solid;
+    width:25%;
+    background: #5eb5e0 no-repeat 1px;
+    text-align: center;
+    padding: 0px 10px;
+}
