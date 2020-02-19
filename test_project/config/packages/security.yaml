@@ -5,7 +5,7 @@ security:
     providers:
         database_user:
             entity:
-                class: App\Entity\User,
+                class: App\Entity\User
                 property: email
    # providers:
         #in_memory: { memory: null }
@@ -15,6 +15,12 @@ security:
             security: false
         main:
             anonymous: lazy
+            form_login:
+                check_path: login
+                login_path: login
+                default_target_path: homepage
+            logout:
+                    path: logout
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication

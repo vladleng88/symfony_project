@@ -10,7 +10,6 @@
 <body>
 <div class="container">
     <p>Добро пожаловать, {{ user.username }}!</p>
-    <p>Чтобы завершить регистрацию, подтвердите <a href="{{ path('email_confirmation', {'code': user.confirmationCode }) }}">{{ path('email_confirmation', {'code': user.confirmationCode }) }}</a></p>
 </div>
 </body>
 </html>

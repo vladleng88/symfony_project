@@ -28,7 +28,12 @@
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/easycorp/easy-log-handler" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/egulias/email-validator" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/jdorn/sql-formatter" />
+      <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/knpuniversity/oauth2-client-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/league/oauth2-client" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/nikic/php-parser" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/ocramius/package-versions" />
@@ -39,8 +44,10 @@
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/psr/cache" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/psr/container" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/psr/http-message" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/psr/link" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/ralouphie/getallheaders" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/sensio/framework-extra-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/swiftmailer/swiftmailer" />
       <excludeFolder url="file://$MODULE_DIR$/test_project/vendor/symfony/apache-pack" />

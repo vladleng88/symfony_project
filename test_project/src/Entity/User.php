@@ -20,6 +20,7 @@ class User implements UserInterface
 
     public const ROLE_USER = 'ROLE_USER';
 
+
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
@@ -35,6 +36,7 @@ class User implements UserInterface
      * @ORM\Column(type="string", unique=true)
      */
     private $email;
+
 
     /**
      * @var string
